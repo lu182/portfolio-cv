@@ -98,9 +98,10 @@ hr {
   opacity: 0.25;
 }
 
-hr:not([size]) {
+/*hr:not([size]) {
   height: 1px;
 }
+*/
 
 h6,
 .h6,
@@ -119,7 +120,7 @@ h1,
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
-  color: #343a40;
+  color: #fbfcfd;
 }
 
 h1,
@@ -163,7 +164,7 @@ h3,
 
 h4,
 .h4 {
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: 1.2rem;
 }
 
 @media (min-width: 1200px) {
@@ -269,12 +270,12 @@ sup {
 }
 
 a {
-  color: #6c757d;
+  color: #f5f6f7;
   text-decoration: underline;
 }
 
 a:hover {
-  color: #dc3545;
+  color: #4502fd;
 }
 
 a:not([href]):not([class]),
@@ -8668,7 +8669,7 @@ fieldset:disabled .btn {
 
 .text-secondary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  color: #fff3cd !important;
 }
 
 .text-success {
@@ -8688,7 +8689,7 @@ fieldset:disabled .btn {
 
 .text-danger {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
+  color: #fff !important;
 }
 
 .text-light {
@@ -8779,7 +8780,7 @@ fieldset:disabled .btn {
 
 .bg-danger {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
+  /*background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;*/
 }
 
 .bg-light {
@@ -12242,7 +12243,9 @@ fieldset:disabled .btn {
 
 body {
   padding-top: 3.375rem;
-  color: #6c757d;
+  color: #fff; 
+  background: linear-gradient(darkviolet, deeppink);  
+  
 }
 
 @media (min-width: 992px) {
@@ -12273,15 +12276,15 @@ h1,
 }
 
 p.lead {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 .subheading {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: none;
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-weight: 200;
+  font-size: 1.4rem;
 }
 
 #sideNav {
@@ -12301,8 +12304,9 @@ p.lead {
 
 @media (min-width: 992px) {
   #sideNav {
-    padding-left: 0;
-    padding-right: 0;
+    /*padding-left: 0;*/
+    /*padding-right: 0;*/
+    padding: 1rem;    
     text-align: center;
     position: fixed;
     top: 0;
@@ -12311,18 +12315,25 @@ p.lead {
     flex-direction: column;
     width: 17rem;
     height: 100vh;
+    background:  rgba(255, 255, 255, .2);
+    box-shadow: 0 1rem 2rem  rgba(0, 0, 0, .3);
+    backdrop-filter: blur(.4rem);    
+    white-space: pre-line;
+    border: .1rem solid rgba(255, 255, 255, .1);
+    border-top: .1rem solid rgba(255, 255, 255, .3);
+    border-left: .1rem solid rgba(255, 255, 255, .3);
   }
 
   #sideNav .navbar-brand {
-    display: flex;
-    margin: auto auto 0;
-    padding: 0.5rem;
+    display: flex;    
+    padding: 2.5rem;
   }
 
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    object-fit: cover;    
   }
 
   #sideNav .navbar-collapse {
@@ -12353,7 +12364,7 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: #730d7a;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
@@ -12365,7 +12376,7 @@ p.lead {
 }
 
 .social-icons .social-icon:hover {
-  background-color: var(--bs-danger);
+  background-color: #000;
 }
 
 .dev-icons {
